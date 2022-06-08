@@ -1,0 +1,108 @@
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body{
+    height: 100vh;
+    background-color:
+        #d161ff;
+    
+} 
+.container
+{
+    border: 2px solid white;
+    width: 40%;
+    max-width: 450px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 40px 30px;
+}
+#newtask 
+{
+    background-color: #ffffff;
+    padding: 30px 20px;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 0 20px 30px black;
+}
+#newtask .input 
+{
+    width: 70%;
+    height: 40px;
+    font-family: fantasy;
+    font-size: 15px;
+    border: 2px solid #d1d3d4;
+    padding: 12px;
+    color: #111111;
+    font-weight: 500;
+    position: relative;
+}
+#newtask .input:focus
+{
+    outline: none;
+    border-color: white;
+}
+#newtask button 
+{
+    position: relative;
+    float: right;
+    width: 20%;
+    height: 40px;
+    border-radius: 5px;
+    font-family: cursive;
+    font-weight: 500;
+    font-size: 16px;
+    background-color:#8052ec;
+    color: #ffffff;
+    cursor: pointer;
+}
+#taskViewer{
+    background-color:white;
+    padding: 30px 20px;
+    margin-top: 60px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px black;
+    width: 100%;
+    position: relative;
+}
+.task 
+{
+    background-color: #eee;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px;
+    margin-top: 10px;
+    border-bottom: 2px solid #eee;
+    cursor: pointer;
+
+
+}
+
+.task span 
+{
+    font-size: 15px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+}
+.task #delete
+{
+    background-color: black;
+    color: white;
+    height: 100%;
+    width: 40px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.completed 
+{
+    text-decoration: line-through;
+}
